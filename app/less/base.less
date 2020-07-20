@@ -1,0 +1,140 @@
+@brand-color: #7eb95e;
+@brand-color-sup: #daebd2;
+@brand-color-add: #f2f2f2;
+
+header {
+background: rgba(230,230,230,1);
+background: -moz-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+background: -webkit-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+background: -o-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+background: -ms-linear-gradient(top, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+background: linear-gradient(to bottom, rgba(230,230,230,1) 0%, rgba(255,255,255,1) 100%);
+
+    div.logo {
+    	width: 100%;
+    	height: 100px;
+    	background: url("../assets/img/logo_colaees.png") no-repeat center center;
+    }
+}
+
+section {
+	padding: 0 15px;
+}
+
+header {
+
+	div.contacts {
+		padding: 0 15px;
+	    text-align: center;
+
+	    strong {
+		    font-size: 2em;
+	    }
+	    span.tel {
+		    font-size: 2.8em;
+	    }
+    }
+
+    nav.main-nav {
+    	background: @brand-color-sup url("../assets/svg/flower.svg") no-repeat 150px center;
+    	background-size: cover;
+    	margin-top: 10px;
+
+    	.arrow-down-sm {
+    		display: none;
+    	}
+
+    	.arrow {
+    		width: 15px;
+    		height: 15px;    		    		
+    	}
+
+    	.arrow-right {
+    		display: inline-block;
+    		background: url("../assets/svg/arrow_right.svg") no-repeat;
+    		background-size: contain;
+    	}
+        
+        .active > span.arrow-down{
+        	display: inline-block;
+        }
+
+        .active > span.arrow-right {
+        	display: none;
+        }
+
+    	.arrow-down {
+    		display: none;
+            background: url("../assets/svg/arrow_down.svg") no-repeat;
+            background-size: contain;
+    	}
+        
+        li:hover,
+    	.active {
+            background: @brand-color-add;
+            border-bottom: 2px solid @brand-color;
+        }
+
+    	ul {
+    		padding-top: 5px;
+    		padding-bottom: 5px;
+
+    		li {
+    			font-size: 2.4em;
+    			padding: 10px;
+    			cursor: pointer;
+
+    			a {
+    				display: inline-block;
+    			}
+    		}
+
+    		ul.submenu {
+    			background: @brand-color-add;
+    			max-height: 0px;
+    			padding: 0;
+                overflow: hidden;
+                -webkit-transition: max-height 0.4s linear;
+                -moz-transition: max-height 0.4s linear;
+                transition: max-height 0.4s linear;
+    			li {
+    				font-size: 16px;
+    			}
+    		}
+
+    		ul.open {
+    			max-height: 600px;
+            }
+
+            ul.submenu:hover {
+            	display: block;
+            }
+
+            ul.subsubmenu {
+            	li {
+            		font-size: 12px;
+            	}
+            	li:hover {
+            		font-family: "HelveticaNeueCyr-Bold";
+            	}
+            }
+    	}
+    }
+}
+
+section.slider,
+div.background-flower {
+	display: none;
+}
+
+.text-base {
+	font-size: 1.4em;
+	text-align: center;
+}
+
+h2 {
+	font-family: "HelveticaNeueCyr-Thin";
+	font-size: 2.4em;
+	text-align: center;
+}
+

@@ -1,0 +1,52 @@
+@import url("base.css");
+@import url("media_minWidth768px.css");
+
+@font-face {
+	font-family: "HelveticaNeueCyr-Roman";
+	src: url("../assets/fonts/HelveticaNeueCyr-Roman.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "HelveticaNeueCyr-Light";
+	src: url("../assets/fonts/HelveticaNeueCyr-Light.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "HelveticaNeueCyr-Bold";
+	src: url("../assets/fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "HelveticaNeueCyr-Black";
+	src: url("../assets/fonts/HelveticaNeueCyr-Black.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "HelveticaNeueCyr-Thin";
+	src: url("../assets/fonts/HelveticaNeueCyr-Thin.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+
+body {
+	font: 62.5% "HelveticaNeueCyr-Light", sans-serif;
+	margin: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+a {
+   text-decoration: none;
+}
+
+
